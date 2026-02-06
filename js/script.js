@@ -13,7 +13,7 @@ let currQus = 0;
 const handleOpt = () => {
 
     displayQus.textContent = `${currQus + 1}` + ".) " + quizQuestions[currQus].question;
-    queNum.innerHTML = `<strong>❓ Q ${currQus + 1} / 30 </strong>`;
+    queNum.innerHTML = `<strong> Q ${currQus + 1} / 30 </strong>`;
     displayOptions.innerHTML = '';
 
     // array options
