@@ -1,0 +1,136 @@
+html body {
+    background: #f6e1baa5;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#boxquesbtn {
+    height: 40px;
+    width: 40px;
+}
+
+.bg-col-6 {
+    background-color: #f7dba7ac;
+}
+
+.padding {
+    padding: 12px 32px !important;
+    font-size: 17px !important;
+    transition: all 0.3s ease;
+}
+
+.padding:hover {
+    color: #fff;
+}
+
+
+.btn-attempted {
+    background: linear-gradient(135deg,
+            #22c55e,
+            #16a34a);
+}
+
+.btn-color {
+    background: linear-gradient(#f7dba7,
+            #f1ab86,
+            #c57b57);
+    border: 0;
+    transition: all 0.3s ease;
+}
+
+.display-quiz .card {
+    transition: all 0.3s ease;
+
+}
+
+.btn-color:hover {
+    scale: 1.18;
+}
+
+.display-quiz .card:hover {
+    scale: 1.02;
+}
+
+.gradient-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b2a20;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(270deg,
+            #f7dba7,
+            #f1ab86,
+            #c57b57);
+    background-size: 200% 200%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.gradient-btn:hover {
+    scale: 1.02;
+}
+
+
+#prev {
+    background: red;
+    color: #fff;
+}
+
+#next {
+    background: rgb(17, 218, 17);
+    color: #fff;
+}
+
+.gradient-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            transparent 30%,
+            #ffffff66 50%,
+            transparent 70%);
+    transform: translateX(-100%);
+}
+
+.gradient-btn:hover::after,
+#prev:hover::after,
+#next:hover::after {
+    animation: shimmer 0.9s ease forwards;
+}
+
+@keyframes shimmer {
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.modal {
+    background: radial-gradient(#f7dba7, #f1ab86, #c57b57) !important;
+}
+
+.quiz-navbar {
+    background: linear-gradient(180deg, #f7dba7, #f1ab86, #c57b57);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-navbar .navbar-brand {
+    font-size: 1.2rem;
+}
+
+.quiz-info span {
+    color: #3b2a20;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.quiz-navbar .btn-outline-light {
+    border-radius: 20px;
+    padding: 6px 14px;
+}
